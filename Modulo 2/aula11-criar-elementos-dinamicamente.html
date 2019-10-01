@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <input id="nome">
+    </div>
+
+    <script>
+        //CRIANDO UMA TAG <A>
+        var linkElement = document.createElement('a')
+            // linkElement.href('www.google.com')
+            //COLOCANDO O ATRIBUTO DA TAG, HREF 
+        linkElement.setAttribute('href', 'http://www.google.com')
+            //COLOCANDO DA TAG
+        var textElement = document.createTextNode('Acessar Google')
+            //JUNTANDO O ELEMENTO DO TEXTO CRIANDO-O DIRETAMENTE
+        linkElement.appendChild(textElement)
+            //LINKANDO O SCRIPT COM A DIV#APP 
+        var containerElement = document.getElementById('app')
+        containerElement.appendChild(linkElement)
+
+        //REMOVENDO O INPUT DO DOCUMENTO HTML
+        var inputElement = document.querySelector('#nome')
+        containerElement.removeChild(inputElement)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+ <button>Add Box</button>
+  <div class="boxes"></div>
+    <script>
+     let btn = document.querySelector('button')
+     btn.addEventListener('click', criarQuadrado)
+
+
+     function criarQuadrado() {
+        var boxElement = document.createElement('div')
+
+        boxElement.style.width = '100px';
+        boxElement.style.height = '100px';
+        boxElement.style.backgroundColor = "blue";
+        boxElement.style.float = 'left';
+
+
+        boxElement.setAttribute('onmouseover',boxElement.style.backgroundColor=getRandomColor())
+        
+
+     document.querySelector('.boxes').appendChild(boxElement)
+}   
+    function getRandomColor() {
+    var letters = "0123456789ABCDEF";
+    var color = "#";
+     for (var i = 0; i < 6; i++) {
+     color += letters[Math.floor(Math.random() * 16)];
+    }
+     return color;
+}
+var newColor = getRandomColor(); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aulas de JavaScript</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome"  class="nome"><hr>
+        <input type="text" name="nome2" id="nome2"><hr>
+        <button class='botao'>Adicionar</button>
+    </div>
+    <script>
+        //var inputElement = document.getElementById('nome')
+        // ELEMENTOS MÚLTIPLOS RETORNAM SEMPRE COMO VETORES
+        //var inputElement = document.getElementsByTagName('input')[0]
+        //var inputElement = document.getElementsByClassName('nome')[0]
+        
+        // QUERY SELECTOR
+        //var inputElement = document.querySelector('div#app input')
+        //SE FOR COLOCADO SÓ INPUT, SERÁ RETORNADO O PRIMEIRO ENCONTRADO NO BODY
+        //var inputElement = document.querySelector('input')
+        //var inputElement = document.querySelector('input[name=nome2]')
+        var inputElement = document.querySelectorAll('input')
+        
+
+        console.log(inputElement)
+
+    </script>
+</body>
+</html>

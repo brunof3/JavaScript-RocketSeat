@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aulas de JavaScript</title>
+</head>
+<body>
+    <div id="app">
+       <label for="botao"> <input type="text" name="nome" id="nome"  class="nome"><hr>
+        <button class='botao'>Adicionar</button>
+    </label>
+    </div>
+    <script>
+        var inputElement = document.querySelector('input[name=nome]')
+
+        var btnElement=document.querySelector('button.botao')
+        btnElement.onclick = function(){
+            var text=inputElement.value
+            alert(text)
+        }
+
+    </script>
+</body>
+</html>

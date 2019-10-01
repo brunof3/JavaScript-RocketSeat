@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aulas de JavaScript</title>
+</head>
+<body>
+    <div id='app'>
+        <button id='botao' onclick=mostraAlerta()>Me Pressione</button>
+        <input onkeypress=mostraAlerta2()>
+    </div>
+
+    <script>
+        
+        function mostraAlerta(){
+            document.getElementById("botao").style.backgroundColor="blue"
+        }
+        function mostraAlerta2(){
+            alert('Escreveu é gay')
+        }
+    
+    </script>
+</body>
+</html>
